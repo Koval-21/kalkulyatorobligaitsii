@@ -3,7 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Калькулятор облигаций</title>
+    
+    <!-- Яндекс.Вебмастер верификация -->
+    <meta name="yandex-verification" content="e200a774432ae63f" />
+    
+    <!-- Google Search Console верификация -->
+    <meta name="google-site-verification" content="JLATruucOP_X7_2wTrin3-HXGJNh4LqBGkfbrHMVu80" />
+    
+    <!-- SEO метатеги -->
+    <meta name="description" content="Бесплатный калькулятор доходности облигаций. Рассчитайте прибыль от инвестиций в облигации с учетом НКД, купонов и цены погашения.">
+    <meta name="keywords" content="калькулятор облигаций, доходность облигаций, расчет облигаций, НКД, купонный доход, инвестиции в облигации, облигации расчет доходности">
+    <meta name="author" content="Калькулятор Облигаций">
+    
+    <!-- Мобильные настройки -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Open Graph для социальных сетей -->
+    <meta property="og:title" content="Калькулятор облигаций - Расчет доходности инвестиций">
+    <meta property="og:description" content="Бесплатный калькулятор для расчета доходности облигаций с учетом НКД и купонных выплат">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kalkulyatorobligaitsii.ru">
+    
+    <!-- Структурированные данные для поисковых систем -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Калькулятор облигаций",
+      "description": "Бесплатный калькулятор для расчета доходности облигаций с учетом НКД, купонных выплат и цены погашения",
+      "url": "https://kalkulyatorobligaitsii.ru",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Калькулятор Облигаций"
+      }
+    }
+    </script>
+    
+    <title>Калькулятор облигаций - Бесплатный расчет доходности инвестиций</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,11 +59,13 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
             color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
         .container {
@@ -296,6 +343,14 @@
                 padding: 12px;
             }
         }
+        
+        /* Улучшения для доступности */
+        @media (prefers-reduced-motion: reduce) {
+            .button:hover,
+            .copy-btn:hover {
+                transform: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -435,7 +490,10 @@
         </div>
         
         <div class="footer">
-            <p>© 2024 Калькулятор облигаций | Версия 1.1</p>
+            <p>© 2024 Калькулятор облигаций | Версия 1.2</p>
+            <p style="font-size: 11px; opacity: 0.7; margin-top: 5px;">
+                Верифицировано: Яндекс.Вебмастер & Google Search Console
+            </p>
         </div>
     </div>
 
@@ -593,6 +651,9 @@
                     }
                 });
             }
+            
+            // Аналитика использования (опционально)
+            console.log('Калькулятор облигаций загружен | Версия 1.2');
         });
         
         // Подсказки при наведении на иконки "?"
@@ -611,6 +672,12 @@
                 alert(messages[inputId]);
             });
         });
+        
+        // Отправка данных в Google Analytics (если подключен)
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXX'); // Замените на ваш ID Google Analytics
     </script>
 </body>
 </html>
